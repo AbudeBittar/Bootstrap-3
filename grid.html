@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Grid System</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style type="text/css">
+        .pink {
+            background: pink;
+            border: 1px solid purple;
+        }
+        .orange {
+            background: orange;
+            border: 1px dashed red;
+            height: 50px;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            #Every Container has rows and colomns.
+            #Every row has 12 units og colomns.
+            #We just hav do know how to divide ths units in the html-tags
+        -->
+        <div class="container">
+            <!--   
+                <div class="row">
+                    <div class="col-lg-4 pink">COL LG 4</div>
+                    <div class="col-lg-4 pink">COL LG 4</div>
+                    <div class="col-lg-4 pink">COL LG 4</div>
+                </div> 
+            -->
+            <!--   
+                <div class="row">
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                    <div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+                </div> 
+            -->
+            <!-- 
+                -- #the four sizes
+                    .col-xs-{1..12} --- > extra small (mobile)
+                    .col-sm-{1..12} --- > small (tablet)
+                    .col-md-{1..12} --- > medium (desktop >= 992px) 
+                    .col-lg-{1..12} --- > larg (desktop >= 1200px)
+                <div class="row">
+                    -- couse lg and md have the value 3 we dont need to write
+                        it twice and nothing will be changed. 
+                    <div class="col-lg-3 col-md-3 col-sm-6 pink">TOUR DATE</div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 pink">TOUR DATE</div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 pink">TOUR DATE</div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 pink">TOUR DATE</div>
+                </div>
+            -->
+            <!-- 
+                Nested colomns in rows
+            -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6 pink">
+                    <!-- Here we nest a row which have two colomns in this colomn -->
+                    <div class="row">
+                        <div class="col-lg-6 orange">FIRST HALF</div>
+                        <div class="col-lg-6 orange">OTHER HALF</div>
+                    </div>
+                </div>
+                <!-- two colomns without nesting -->
+                <div class="col-md-3 col-sm-6 pink">TOUR DATE!</div>
+                <div class="col-md-3 col-sm-6 pink">TOUR DATE!</div>
+                <!-- Here we nest a row which have six colomns in this colomn -->
+                <div class="col-md-3 col-sm-6 pink">
+                    <div class="row">
+                        <div class="col-lg-2 orange"></div>
+                        <div class="col-lg-2 orange"></div>
+                        <div class="col-lg-2 orange"></div>
+                        <div class="col-lg-2 orange"></div>
+                        <div class="col-lg-2 orange"></div>
+                        <div class="col-lg-2 orange"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Navbars</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <!--
+            this buttom is called hamburger
+            this button is used to put all hidden (collaped) Lists in a menue.
+            We have to paste it direct after navbar-header class and before navbar-brand class.
+            --------------------------------------------------------------------------------------------------------
+            data-target attribute MUST be IDENTICAL to the id of the collapse navbar-collapse class. without #-sine.
+            --------------------------------------------------------------------------------------------------------
+        -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="https://www.facebook.com/abude.bittar" class="navbar-brand">
+          <span>Abudé</span>
+        </a>
+      </div>
+      <!-- collapse (zusammenbrechen) navbar-collapse: 
+          - Is used to hide the menue to mobile size.
+          - Whatever we put inside of this class will be collapsed when we hit Mobile size
+      -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#signup">Signup</a>
+          </li>
+          <li>
+            <a href="#login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script src="bootstrap.js"></script>
+</body>
+</html>
+
